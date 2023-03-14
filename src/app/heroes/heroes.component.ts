@@ -14,4 +14,10 @@ export class HeroesComponent {
   };
 
   heroes = HEROES;
+
+  selectedHero?: Hero;
+  onSelect(hero: Hero) {
+    console.log('clicked!');
+    this.selectedHero = hero;
+  }
 }
